@@ -787,6 +787,7 @@ h6 {
     }
     .promo__foto {
         max-width: 31.438rem;
+        height: auto;
     }
     .promo__text {
         text-align: center;
