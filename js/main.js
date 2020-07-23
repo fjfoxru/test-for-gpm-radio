@@ -23,6 +23,7 @@ form.addEventListener('submit', (e) => {
 const openMenu = document.querySelector('.button-navigation');
 const closeMenu = document.querySelector('.menu__close');
 const menu = document.querySelector('.navigation');
+const menuLinks = Array.from(document.getElementsByClassName('link'));
 
 openMenu.addEventListener('click', event => {
     event.preventDefault();
@@ -31,3 +32,11 @@ openMenu.addEventListener('click', event => {
 closeMenu.addEventListener('click', event => {
     menu.classList.remove('navigation_active');
 });
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('navigation_active');
+    })
+
+});
+
