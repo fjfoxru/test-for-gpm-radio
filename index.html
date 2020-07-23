@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Память поколений</title>
+    <meta name="description" content="Подать заявку.">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="modal-wrapper">
+        <section class="modal">
+            <div class="modal__close">
+                <button class="close">
+                    <img alt="кнопка закрыть" src="img/button-close.svg">
+                </button>
+            </div>
+            <header>
+                <h2 class="section-title">Подать заявку</h2>
+            </header>
+            <form class="form" id="form">
+                <label class="label"><span class="hint">Ваше имя и фамилия</span>
+                    <input type="text" class="field" name="name" required>
+                </label>
+                <label class="label"><span class="hint">Город</span>
+                    <input type="text" class="field" name="location" required>
+                </label>
+                <label class="label"><span class="hint">Телефон</span>
+                    <input type="tel" class="field" name="tel" required>
+                </label>
+                <label class="label"><span class="hint">Email</span>
+                    <input type="email" class="field" name="email" required>
+                </label>
+                <label class="label"><span class="hint">Имя и фамилия родственника</span>
+                    <input type="text" class="field" name="relative" required>
+                </label>
+                <label class="label"><span class="hint">Кем вы приходитесь (внук, племянница и тд)</span>
+                    <input type="text" class="field" name="relationship" required>
+                </label>
+
+                <div class="input__wrapper">
+                    <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                    <label class="button button_file">
+                        <span class="input__file-button-text">Прикрепить фото</span>
+                    </label>
+                </div>
+                <label class="label"><span class="hint">Напишите историю<span class="hint-max">до 3500
+                            символов</span></span>
+                    <textarea class="field textarea" required></textarea>
+                </label>
+                <button type="submit" class="button button_send">Отправить</button>
+            </form>
+        </section>
+    </div>
+    <header class="header">
+        <nav class="header__navigation">
+            <div class="logo">
+                <div class="logo__wrapper">
+                    <img alt="75 лет Победы" src="img/logo-img.svg" class="logo__img">
+                </div>
+                <div class="logo__text">
+                    <img alt="С праздником Победы!" src="img/logo-text.svg">
+                </div>
+            </div>
+            <a href='' class="button-navigation"><img alt="кнопка меню" src="img/button-navigation.svg"></a>
+            <ul class="navigation">
+                <li class="menu__close">
+                    <button class="close">
+                        <img alt="закрыть меню" src="img/button-close.svg">
+                    </button>
+                </li>
+                <li class="navigation__item"><a class="link" href="#1">Главная</a></li>
+                <li class="navigation__item"><a class="link" href="#2">Как участвовать</a></li>
+                <li class="navigation__item"><a class="link" href="#3">Участники</a></li>
+                <li class="navigation__item"><a class="link" href="#4">Новости</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <a name="1"></a>
+        <section class="promo">
+            <article class="promo__text">
+                <span class="promo__date">С 23 апреля</span>
+                <header>
+                    <h1 class="title">Память поколений</h1>
+                </header>
+                <div class="about">
+                    <p>У каждого из нас есть близкие, которые стали свидетелями тех военных лет, совершали подвиги и вершили историю! Защищали Родину и боролись за мирную жизнь!</p>
+                    <p>Поделитесь историей и фотографией своих родных и они прозвучат в эфире Радио Romantika!</p>
+                </div>
+                <a class="button button_open" href="#" rel="button">Участвовать</a>
+            </article>
+            <div class="promo__img">
+                <img alt="главное фото" class="promo__foto" src="img/promo.svg">
+            </div>
+        </section>
+        <a name="2"></a>
+        <section class="participate">
+            <header>
+                <h2 class="section-title">Как участвовать</h2>
+            </header>
+            <div class="steps">
+                <div class="step">
+                    <span class="step__index">1 шаг</span>
+                    <img alt="1 шаг" src="img/step1.svg" class="step__img">
+                    <p class="step__about">Заполните заявку для участия у&nbsp;нас&nbsp;на&nbsp;странице</p>
+                </div>
+                <div class="step">
+                    <span class="step__index">2 шаг</span>
+                    <img alt="2 шаг" class="step__img" src="img/step2.svg">
+                    <p class="step__about">Напишите о своем родственнике, принимавшем участие в Великой Отечественной войне
+                    </p>
+                </div>
+                <div class="step">
+                    <span class="step__index">3 шаг</span>
+                    <img alt="3 шаг" src="img/step3.svg" class="step__img">
+                    <p class="step__about">Загрузите фотографию.&nbsp;Готово!</p>
+                </div>
+            </div>
+            <a rel="button" class="button button_message button_open" href="#">Отправить заявку</a>
+        </section>
+        <a name="3"></a>
+        <section class="participants">
+            <h2 class="section-title">Участники</h2>
+            <article class="participant__wrapper">
+                <div class="participant__person">
+                    <img alt="участник" class="participant__foto" src="img/par1.jpg">
+                    <div class="participant__label">
+                        <div class="participant__name">Имя Фамилия</div>
+                    </div>
+                </div>
+                <div class="participant__about">
+                    <p class="participant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices bibendum viverra aliquam duis vehicula vitae sit varius urna. Convallis euismod venenatis cursus arcu elementum blandit massa euismod blandit. Porttitor ultrices ultricies
+                        cras morbi sit. Et, sed nibh egestas aliquam faucibus egestas. Magnis quis egestas scelerisque vivamus ornare. Quis in phasellus pharetra, tortor metus. Diam tristique sociis nec imperdiet in viverra egestas et. Vitae, tempus est
+                        convallis pulvinar pharetra tristique aliquet. Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem. Vel eu odio pharetra, lacus a, diam. Enim quis
+                        blandit senectus lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl, orci purus viverra nisl eget. Volutpat sit neque condimentum odio sit vitae sed felis urna. Tortor orci amet, pellentesque odio. Ultricies iaculis
+                        aenean sem nec. Consectetur ac iaculis varius rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in interdum. Semper sodales augue nec morbi dignissim facilisis. Sed malesuada leo morbi quam dui nibh suspendisse non
+                        non. Eu eget adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim a euismod. Risus semper nunc condimentum nisl et cras neque proin nam. In nisi duis ornare
+                        diam ultrices mi massa vitae.</p>
+                    <footer class="participant__footer">
+                        <div class="autor">
+                            <div class="autor__name">Имя Фамилия (правнучка)</div>
+                            <div class="autor__location">г. Москва</div>
+                        </div>
+                        <div class="social">
+                            <img class="" alt="соц сеть" src="img/social-od.svg">
+                            <img class="" alt="соц сеть" src="img/social-fb.svg">
+                            <img class="" alt="соц сеть" src="img/social-vk.svg">
+                        </div>
+                    </footer>
+                </div>
+            </article>
+            <article class="participant__wrapper">
+                <div class="participant__person">
+                    <img alt="участник" class="participant__foto" src="img/par2.jpg">
+                    <div class="participant__label">
+                        <div class="participant__name">Имя Фамилия</div>
+                    </div>
+                </div>
+                <div class="participant__about">
+                    <p class="participant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices bibendum viverra aliquam duis vehicula vitae sit varius urna. Convallis euismod venenatis cursus arcu elementum blandit massa euismod blandit. Porttitor ultrices ultricies
+                        cras morbi sit. Et, sed nibh egestas aliquam faucibus egestas. Magnis quis egestas scelerisque vivamus ornare. Quis in phasellus pharetra, tortor metus. Diam tristique sociis nec imperdiet in viverra egestas et. Vitae, tempus est
+                        convallis pulvinar pharetra tristique aliquet. Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem. Vel eu odio pharetra, lacus a, diam. Enim quis
+                        blandit senectus lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl, orci purus viverra nisl eget. Volutpat sit neque condimentum odio sit vitae sed felis urna. Tortor orci amet, pellentesque odio. Ultricies iaculis
+                        aenean sem nec. Consectetur ac iaculis varius rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in interdum. Semper sodales augue nec morbi dignissim facilisis. Sed malesuada leo morbi quam dui nibh suspendisse non
+                        non. Eu eget adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim a euismod. Risus semper nunc condimentum nisl et cras neque proin nam. In nisi duis ornare
+                        diam ultrices mi massa vitae.</p>
+                    <footer class="participant__footer">
+                        <div class="autor">
+                            <div class="autor__name">Имя Фамилия (правнучка)</div>
+                            <div class="autor__location">г. Москва</div>
+                        </div>
+                        <div class="social">
+                            <img class="" alt="соц сеть" src="img/social-od.svg">
+                            <img class="" alt="соц сеть" src="img/social-fb.svg">
+                            <img class="" alt="соц сеть" src="img/social-vk.svg">
+                        </div>
+                    </footer>
+                </div>
+            </article>
+            <article class="participant__wrapper">
+                <div class="participant__person">
+                    <img alt="участник" class="participant__foto" src="img/par1.jpg">
+                    <div class="participant__label">
+                        <div class="participant__name">Имя Фамилия</div>
+                    </div>
+                </div>
+                <div class="participant__about">
+                    <p class="participant__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices bibendum viverra aliquam duis vehicula vitae sit varius urna. Convallis euismod venenatis cursus arcu elementum blandit massa euismod blandit. Porttitor ultrices ultricies
+                        cras morbi sit. Et, sed nibh egestas aliquam faucibus egestas. Magnis quis egestas scelerisque vivamus ornare. Quis in phasellus pharetra, tortor metus. Diam tristique sociis nec imperdiet in viverra egestas et. Vitae, tempus est
+                        convallis pulvinar pharetra tristique aliquet. Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem. Vel eu odio pharetra, lacus a, diam. Enim quis
+                        blandit senectus lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl, orci purus viverra nisl eget. Volutpat sit neque condimentum odio sit vitae sed felis urna. Tortor orci amet, pellentesque odio. Ultricies iaculis
+                        aenean sem nec. Consectetur ac iaculis varius rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in interdum. Semper sodales augue nec morbi dignissim facilisis. Sed malesuada leo morbi quam dui nibh suspendisse non
+                        non. Eu eget adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim a euismod. Risus semper nunc condimentum nisl et cras neque proin nam. In nisi duis ornare
+                        diam ultrices mi massa vitae.</p>
+                    <footer class="participant__footer">
+                        <div class="autor">
+                            <div class="autor__name">Имя Фамилия (правнучка)</div>
+                            <div class="autor__location">г. Москва</div>
+                        </div>
+                        <div class="social">
+                            <img class="" alt="соц сеть" src="img/social-od.svg">
+                            <img class="" alt="соц сеть" src="img/social-fb.svg">
+                            <img class="" alt="соц сеть" src="img/social-vk.svg">
+                        </div>
+                    </footer>
+                </div>
+            </article>
+        </section>
+        <section class="pagination">
+            <div class="pagination__arror">
+                <img alt="стрелка назад" src="img/arrow-prev.svg">
+            </div>
+            <span class="pagination__page pagination__page_active">1</span>
+            <span class="pagination__page">2</span>
+            <span class="pagination__page">3</span>
+            <div class="pagination__arror">
+                <img alt="стрелка вперед" src="img/arrow-next.svg">
+            </div>
+        </section>
+        <a name="4"></a>
+        <aside class="news">
+            <header>
+                <h2 class="section-title">Новости</h2>
+            </header>
+            <div class="news-list">
+                <img alt="список новостей" src="img/list-news.jpg">
+            </div>
+        </aside>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
